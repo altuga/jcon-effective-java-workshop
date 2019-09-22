@@ -6,7 +6,7 @@ import java.util.List;
 /*
 TODO
  1 - Compile Hazardous.java
- 2 - There are 1 warnings, can you spot the warning ?
+ 2 - There is 1 warning, can you spot the warning ?
  3 - try to fix this 1 warning.
 */
 public class Hazardous {
