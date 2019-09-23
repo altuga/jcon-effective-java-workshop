@@ -20,5 +20,11 @@ public final class StockInfo {
         return value;
     }
 
-
+    @Override
+    public String toString() {
+        return "StockInfo{" +
+                "name='" + name + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }
