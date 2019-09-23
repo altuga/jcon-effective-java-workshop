@@ -23,11 +23,16 @@ public class Sum {
     private static long sum() {
         Long sum = 0L;
         for (long i = 0; i <= Integer.MAX_VALUE; i++)
-            sum += i;
+            sum += i; // Autoboxing
         return sum;
     }
 
     public static void main(String[] args) {
-        sum();
+      long start = System.nanoTime(); // always use nanotTime for accuracy
+      sum();
+      long end = System.nanoTime();
+      System.out.println(  TimeUnit.MILLISECONDS.convert( (end - start), TimeUnit.NANOSECONDS) +  " ms..");
+
+
     }
 }

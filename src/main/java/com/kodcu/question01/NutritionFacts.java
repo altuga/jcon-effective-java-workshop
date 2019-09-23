@@ -78,6 +78,8 @@ public class NutritionFacts {
 
     public static void main(String[] args) {
 
+        NutritionFacts nutritionFacts =
+                new Builder(10,20).fat(20).fat(10).build();
 
     }
 
