@@ -1,7 +1,8 @@
 package com.kodcu.question23;
 
-import static com.kodcu.question23.PrintedWork.STYLE_BOLD;
-import static com.kodcu.question23.PrintedWork.STYLE_STRIKETHROUGH;
+import java.util.EnumSet;
+import java.util.Set;
+
 
 
 /**
@@ -14,7 +15,8 @@ public class Main {
 
     public static void main(String[] args) {
         PrintedWork printedWork = new PrintedWork();
-        printedWork.applyStyles(STYLE_BOLD); //1 and //4
+        printedWork.applyStyles(EnumSet.of(PrintedWork.Style.BOLD,
+                PrintedWork.Style.STRIKETHROUGH)); //1 and //4
 
     }
 }
