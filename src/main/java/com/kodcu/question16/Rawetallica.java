@@ -21,7 +21,8 @@ public class Rawetallica {
     }
 
     //1
-    private static void add(List list, Object o) {
+    @SuppressWarnings("unchecked")
+    private static void add(List list, Integer o) {
         list.add(o);
     }
 
