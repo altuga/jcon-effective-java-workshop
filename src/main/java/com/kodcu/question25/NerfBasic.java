@@ -23,18 +23,22 @@ public class NerfBasic {
     }
 
 
-    //1
-    public boolean equals(NerfBasic nerfBasic) {
+    @Override
+    public boolean equals(Object nerfBasic) {
         if (this == nerfBasic) return true;
 
-        return Double.compare(nerfBasic.range, range) == 0 &&
-                dartInRows == nerfBasic.dartInRows;
+        if (! (nerfBasic instanceof  NerfBasic)) {
+            return false;
+        }
+        NerfBasic basic = (NerfBasic) nerfBasic;
+        return Double.compare(basic.range, range) == 0 &&
+                dartInRows == basic.dartInRows;
     }
 
 
-
+    @Override
     public int hashCode() {
-        return Objects.hashCode(range * dartInRows);
+        return 42;
     }
 
     @Override
