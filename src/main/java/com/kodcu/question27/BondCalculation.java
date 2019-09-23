@@ -22,12 +22,20 @@ public class BondCalculation {
      * @return Calculated Money Value
      * @throws ArithmeticException if m is less than or equal to 0
      */
-    public BigDecimal calculateTimeValueOfMoney(BigDecimal m) {
+
+    public BigDecimal calculateTimeValueOfMoney( BigDecimal m) {
 
         /*
         Should we check if m is null or not ? If Yes how ?
          */
 
+        //if(m == null) {
+        //    throw  new IllegalStateException("m is null") ;
+        //}
+
+        //Objects.requireNonNull(m, "the value of m is null");
+
+        assert m !=null; //-enableassertions
         //1
         //2
 
