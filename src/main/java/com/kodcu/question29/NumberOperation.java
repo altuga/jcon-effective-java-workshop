@@ -21,19 +21,17 @@ public class NumberOperation {
 
 
     //2
-    static int min(Integer[] args) {
-        if (args.length == 0)
-            throw new IllegalArgumentException("Too few arguments");
-        int min = args[0];
-        for (int i = 1; i < args.length; i++)
-            if (args[i] < min)
-                min = args[i];
+    static int min(int firstArg, int... remainingArgs) {
+        int min = firstArg;
+        for (int arg : remainingArgs)
+            if (arg < min)
+                min = arg;
         return min;
     }
 
 
     public static void main(String[] args) {
         System.out.println(sum(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)));
-        System.out.println(min(new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}));
+        System.out.println(min(29, 3,5,7));
     }
 }
