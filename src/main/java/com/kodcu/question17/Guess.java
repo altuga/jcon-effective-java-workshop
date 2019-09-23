@@ -14,7 +14,7 @@ TODO
  4 - What is the lesson  ?
 */
 
-public class Guess { //1
+public final class Guess { //1
     private final Object[] choiceArray;  //2
 
     //3
@@ -37,8 +37,12 @@ public class Guess { //1
         Guess guess = new Guess(intList); // 5
 
         for (int i = 0; i < 10; i++) {
-            String choice = (String) guess.choose();
-            System.out.println(choice);
+
+            if (guess.choose() instanceof String) {
+                String choice = (String) guess.choose();
+                System.out.println(choice);
+            }
+
         }
 
         guess = new Guess(stringList);
