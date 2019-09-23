@@ -24,7 +24,7 @@ public class RunTests {
         Class<?> testClass = Sample.class ;
 
         for (Method m : testClass.getDeclaredMethods()) {
-            if (m.getName().startsWith("test")) {  //2
+            if (m.isAnnotationPresent(Test.class))  {  //2
                 tests++;
                 try {
                     m.invoke(null);
