@@ -26,8 +26,8 @@ public final class Period {
         if (start.compareTo(end) > 0)
             throw new IllegalArgumentException(
                     start + " after " + end);
-        this.start = start;
-        this.end = end;
+        this.start = new Date(start.getTime());
+        this.end = new Date(end.getTime());;
 
     }
 
