@@ -16,7 +16,6 @@ public class Main {
     private static class Utensil {
         static final String NAME = "pan";
     }
-
     private static class Dessert {
         static final String NAME = "cake";
     }

@@ -21,5 +21,9 @@ public class AreaCalculator {
         double r = 3 ;
         double area = PhysicalConstants.PI.getValue() * Math.pow(r, 2) ;
         System.out.println(" Area " + area);
+
+        double mass = 5 ;
+        double energy = mass * Math.pow(PhysicalConstants.C.getValue(), 2) ;
+        System.out.println(" energy  " + energy );
     }
 }

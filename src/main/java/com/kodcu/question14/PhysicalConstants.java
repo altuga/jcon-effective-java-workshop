@@ -3,12 +3,12 @@ package com.kodcu.question14;
 
 public enum PhysicalConstants {
 
-    PI(3.14159);
+    PI(3.14159),
+    C(3*10e7);
     private double value ;
 
 
     PhysicalConstants(double value) {
-
         this.value = value;
     }
 
