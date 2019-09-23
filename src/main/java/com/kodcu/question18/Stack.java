@@ -6,7 +6,7 @@ import java.util.Arrays;
 /*
 TODO
  1 - Convert Stack.java into type safe mode - Generics
- 2 - What is the lesson  ?
+ 2 - What is the lesson  ? ?
 */
 
 public class Stack<E> { // 1_1
