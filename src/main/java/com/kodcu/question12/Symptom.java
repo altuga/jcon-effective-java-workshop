@@ -32,10 +32,14 @@ public class Symptom {
         List<Card> deck = new ArrayList<>();
 
         //1
-        for (Iterator<Card.Suit> i = suits.iterator(); i.hasNext(); )
-            for (Iterator<Card.Rank> j = ranks.iterator(); j.hasNext(); )
-                deck.add(new Card(i.next(), j.next()));
+        for (Card.Suit suit : suits) {
+            for (Card.Rank rank : ranks) {
+                deck.add(new Card(suit, rank));
+            }
+        }
 
-        
+        System.out.println(deck);
+
+
     }
 }
