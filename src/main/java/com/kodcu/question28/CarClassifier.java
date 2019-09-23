@@ -14,9 +14,10 @@ import java.util.List;
 public class CarClassifier {
 
     //1
-    public  String classify(Car car) {
-        return "Car";
-    }
+ public static String classify(Car c) {
+       return c instanceof BMW ? "BMW" :
+            c instanceof Mercedes ? "Mercedes" : "Just a Car";
+  }
 
 
     public  String classify(BMW bmw) {
@@ -30,6 +31,7 @@ public class CarClassifier {
 
 
     public static void main(String[] args) {
+
         List<Car> collections = List.of(
                 new Car(),
                 new Mercedes(),

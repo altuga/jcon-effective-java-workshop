@@ -1,9 +1,6 @@
 package com.kodcu.question28;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  *
@@ -25,7 +22,7 @@ public class SetList {
         }
         for (int i = 0; i < 3; i++) {
             set.remove(i);
-            list.remove(i); //2
+            list.remove(Integer.valueOf(i));; //2
         }
         System.out.println(set + " " + list);
     }
