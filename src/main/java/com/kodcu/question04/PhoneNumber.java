@@ -21,6 +21,7 @@ TODO:
 public final class PhoneNumber {
     private final short areaCode, prefix, lineNum;
 
+
     public PhoneNumber(int areaCode, int prefix, int lineNum) {
         this.areaCode = rangeCheck(areaCode, 999, "area code");
         this.prefix   = rangeCheck(prefix,   999, "prefix");
@@ -45,7 +46,10 @@ public final class PhoneNumber {
                 && pn.areaCode == areaCode;
     }
 
-
+    @Override
+    public int hashCode() {
+        return Objects.hash(areaCode, prefix, lineNum);
+    }
 
     public static void main(String[] args) {
 
